@@ -3,11 +3,11 @@
 import { useState, useCallback } from "react";
 import { useForm, FieldValues, SubmitHandler } from "react-hook-form";
 import { BsGithub, BsGoogle } from "react-icons/bs";
+import AuthSocialButton from "./AuthSocialButton";
+import axios from "axios";
 
 import Input from "@/app/components/input/Input";
 import Button from "@/app/components/button";
-import AuthSocialButton from "./AuthSocialButton";
-import axios from "axios";
 
 type Variant = "LOGIN" | "REGISTER";
 
