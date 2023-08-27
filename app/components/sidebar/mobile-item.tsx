@@ -30,7 +30,7 @@ const MobileItem: React.FC<MobileItemProps> = ({
         group
         flex
         gap-x-3
-        text-sm
+        text-lg
         leading-6
         font-semibold
         w-full
