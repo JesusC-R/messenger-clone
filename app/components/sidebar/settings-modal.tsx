@@ -47,6 +47,10 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
     });
   };
 
+  const onRemoveImage = () => {
+    setValue("image", "/images/placeholder.jpg");
+  }
+
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setIsLoading(true);
 
@@ -103,6 +107,9 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                       Change
                     </Button>
                   </CldUploadButton>
+                  <Button disabled={isLoading} danger type="button" onClick={onRemoveImage}>
+                    Remove
+                  </Button>
                 </div>
               </div>
             </div>
