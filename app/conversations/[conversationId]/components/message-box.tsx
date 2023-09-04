@@ -8,6 +8,7 @@ import { useSession } from "next-auth/react";
 import { FullMessageType } from "@/app/types";
 
 import Avatar from "@/app/components/avatar";
+import ImageModal from "./image-modal";
 // import ImageModal from "./ImageModal";
 
 interface MessageBoxProps {
@@ -53,7 +54,11 @@ const MessageBox: React.FC<MessageBoxProps> = ({
           </div>
         </div>
         <div className={message}>
-          {/* <ImageModal src={data.image} isOpen={imageModalOpen} onClose={() => setImageModalOpen(false)} /> */}
+          <ImageModal
+            src={data.image}
+            isOpen={imageModalOpen}
+            onClose={() => setImageModalOpen(false)}
+          />
           {data.image ? (
             <Image
               alt="Image"
