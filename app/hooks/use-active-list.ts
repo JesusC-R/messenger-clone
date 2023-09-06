@@ -16,3 +16,5 @@ const useActiveList = create<ActiveListProps>((set) => ({
     })),
   set: (ids) => set({ members: ids }),
 }));
+
+export default useActiveList;
